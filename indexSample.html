@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 3</title>
+</head>
+<body>
+<main>
+  <form name ="myform" action="javascript:completeAndRedirect();">
+    <div>
+      <label for="Frame">First name:</label>
+      <input type="text" id="Frame" placeholder="Enter first name" required>
+    </div>
+    <div>
+      <label>First name:
+        <input type="text" placeholder="Enter first name" maxlength="30" minlength="2" required>
+      </label>
+    </div>
+    <div>
+      <label>First name:
+        <br>
+          <input type="text" pattern="[A-Za-z]{1,32}"  placeholder="Enter first name">
+      </label>
+    </div>
+    <div>
+      <label>Country:
+      <input type="text" placeholder="Canada" disabled>
+        </label>
+    </div>
+    <div>
+      <label>Country:
+        <input type="text" value="Canada" readonly>
+      </label>
+    </div>
+    <div>
+      <input type="number" min="10" max="30" step="5" required>
+    </div>
+    <div>
+      <input type="email" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter you email" autocomplete="">
+    </div>
+    <div>
+      <input type="radio" name="BMW" value="BMW"> <span>BMW</span>
+    </div>
+    <div>
+      <label>
+        <input type="radio" name="BMW" value="Audi">
+      </label>
+      <span>Audi</span>
+    </div>
+    <div>
+    <input type="radio" name="BMW" value="Ford">
+      <span>Ford</span>
+    </div>
+    <div>
+      <input type="range" min="1" max="100" step="5"> <span>Price</span>
+    </div>
+    <div>
+      <input type="checkbox" value="Privacy">
+    </div>
+    <div>
+      <input type="submit">
+    </div>
+    <div>
+      <input type="button" value="Check">
+    </div>
+    <div>
+      <input type="reset">
+    </div>
+    <div>
+      <input type="file" multiple accept="image/jpeg">
+    </div>
+  </form>
+
+
+</main>
+<script src="mainSample.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HometaskForm</title>
+</head>
+<body>
+    <h1>Personal Details</h1>
+<main>
+    <form name ="myform" action="javascript:completeAndRedirect();">
+        <div>
+            <label>Salutation:
+                <br>
+                <select name="Salutation" id="Salutation">
+                    <option value="None">---</option>
+                    <option value="Sir">Dear Sir</option>
+                    <option value="Madam">Dear Madam</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>First name:
+                <input type="text" name="fname" pattern="[A-Za-z]{1,32}"  placeholder="Enter first name" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>Last name:
+                <input type="text" name="lname" pattern="[A-Za-z]{1,32}"  placeholder="Enter last name" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>Gender:</label>
+                <input type="radio" name="sex" value="Male">
+                <span>Male</span>
+                <input type="radio" name="sex" value="Female">
+                <span>Female</span>
+        </div>
+        <br>
+        <div>
+            <label>Date of Birth:
+        <input type="date" name="date"
+               value="2022-12-12">
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>Phone:
+                <input type="text" name="tel" placeholder="Enter phone number" required>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>E-mail:
+                <input type="email" name="email" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                       placeholder="Enter you email" autocomplete="off">
+            </label>
+        </div>
+        <br>
+        <div>
+             <label>Address:
+             <br>
+                 <textarea name="message" style="resize: none; width: 400px; height: 200px"></textarea>
+             </label>
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+
+    </form>
+
+    <p id="text">
+
+</main>
+    <script src="main.js"></script>
+</body>
+</html>
